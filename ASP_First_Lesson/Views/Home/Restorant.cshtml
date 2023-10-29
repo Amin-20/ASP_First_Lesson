@@ -1,0 +1,42 @@
+﻿@model ASP_First_Lesson.Models.RestorantViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restorant Page</title>
+</head>
+<body>
+
+    <h1>Restorant</h1>
+    <hr />
+    <h2>Drinks</h2>
+    @foreach (var item in Model.Drinks)
+    {
+        <div style="padding-bottom:30px">
+            <h3>ID : @item.Id</h3>
+            <h3>Name : @item.Name</h3>
+            <h3 style="padding-bottom:10px">Price : @item.Price ₼</h3>
+        </div>
+    }
+    <h2>FastFoods</h2>
+    @foreach (var item in Model.FastFoods)
+    {
+        <div style="padding-bottom:30px">
+            <h3>ID : @item.Id</h3>
+            <h3>Name : @item.Name</h3>
+            <h3 style="padding-bottom:10px">Price : @item.Price ₼</h3>
+        </div>
+    }
+    <h2>HotMeals</h2>
+    @foreach (var item in Model.HotMeals)
+    {
+        <div style="padding-bottom:30px">
+            <h3>ID : @item.Id</h3>
+            <h3>Name : @item.Name</h3>
+            <h3 style="padding-bottom:10px">Price : @item.Price ₼</h3>
+        </div>
+    }
+
+</body>
+</html>
